@@ -3,6 +3,9 @@ name: Update pre-commit
 on:
   workflow_dispatch:
 
+permissions:
+  pull-requests: write
+
 jobs:
   pre-commit-update:
     name: Update pre-commit
