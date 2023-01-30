@@ -1,0 +1,10 @@
+name: Update pre-commit
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pre-commit-update:
+    name: Update pre-commit
+    uses: rmartin16/.github-beeware/.github/workflows/pre-commit-update.yml@update-pre-commit
+    secrets: inherit

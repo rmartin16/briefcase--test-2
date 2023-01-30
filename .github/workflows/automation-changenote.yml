@@ -1,0 +1,13 @@
+name: Automation Change Note
+
+on:
+  push:
+    branches:
+      - 'dependabot/**'
+      - 'autoupdates/pre-commit'
+
+jobs:
+  changenote:
+    name: Automation Change Note
+    uses: rmartin16/.github-beeware/.github/workflows/automation-changenote.yml@update-pre-commit
+    secrets: inherit
