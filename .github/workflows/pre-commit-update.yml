@@ -11,3 +11,6 @@ jobs:
     name: Update pre-commit
     uses: rmartin16/.github-beeware/.github/workflows/pre-commit-update.yml@update-pre-commit
     secrets: inherit
+    with:
+      pre-commit-source: "pre-commit"
+      create-changenote: false
